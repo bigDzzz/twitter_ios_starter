@@ -17,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MOj-F0-0HA">
+                                <rect key="frame" x="115" y="273" width="145" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="0Ot-Md-KZ4"/>
+                                    <constraint firstAttribute="height" constant="121" id="BF4-vG-DJM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11380929499864578" green="0.62768656015396118" blue="0.95034843683242798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MOj-F0-0HA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bqE-QA-YHO"/>
+                            <constraint firstItem="MOj-F0-0HA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="k0J-Bh-NZC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
                 </viewController>
@@ -26,4 +39,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TwitterLogo" width="120" height="120"/>
+    </resources>
 </document>
