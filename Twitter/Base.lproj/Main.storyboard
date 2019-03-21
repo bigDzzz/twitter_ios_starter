@@ -72,14 +72,14 @@
                                                 <constraint firstAttribute="width" constant="65" id="kye-zW-OvS"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTP-7w-cLm">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTP-7w-cLm">
                                             <rect key="frame" x="73" y="11" width="42.5" height="18"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-CE-kQv">
-                                            <rect key="frame" x="73" y="33" width="286" height="14.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-CE-kQv">
+                                            <rect key="frame" x="73" y="33" width="286" height="56"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -103,7 +103,7 @@
                                             </constraints>
                                             <state key="normal" image="retweet-icon"/>
                                             <connections>
-                                                <action selector="retweet:" destination="iPr-Jc-B0B" eventType="touchUpInside" id="RLI-bV-brz"/>
+                                                <action selector="retweetAction:" destination="iPr-Jc-B0B" eventType="touchUpInside" id="XMe-5S-xWN"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -118,6 +118,7 @@
                                         <constraint firstItem="NTP-7w-cLm" firstAttribute="top" secondItem="x5b-HV-VBn" secondAttribute="topMargin" id="WFQ-SY-0vv"/>
                                         <constraint firstItem="NTP-7w-cLm" firstAttribute="leading" secondItem="WMX-m7-xUT" secondAttribute="trailing" constant="8" id="dyp-H6-4FQ"/>
                                         <constraint firstItem="vVR-CE-kQv" firstAttribute="trailing" secondItem="x5b-HV-VBn" secondAttribute="trailingMargin" id="fwK-pF-Ag2"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NTP-7w-cLm" secondAttribute="trailing" constant="20" symbolic="YES" id="hkn-Od-pTQ"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Ohl-St-Yy3" secondAttribute="trailing" constant="10" id="sjU-Kd-9UX"/>
                                         <constraint firstItem="WMX-m7-xUT" firstAttribute="top" secondItem="x5b-HV-VBn" secondAttribute="top" id="u2C-Za-j55"/>
                                     </constraints>
